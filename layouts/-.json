@@ -892,6 +892,51 @@
       "conditions": [
         {
           "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "pizzas_ids[0]",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "pizzas_ids[1]",
+            "=",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "pizzas_ids[2]",
+            "=",
+            "3"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "ButtonStates::ButtonFSM::IsClicked"
           },
           "parameters": [
@@ -1023,6 +1068,17 @@
                 "customer texts.Y()",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "pizza1",
+                "id_pizza",
+                "=",
+                "5"
+              ]
             }
           ]
         },
@@ -1115,36 +1171,6 @@
         },
         {
           "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "pizzas_ids[0]",
-            "=",
-            "pizzas.id_pizza"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "pizzas_ids[1]",
-            "=",
-            "pizzas.value_pizza"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "pizzas_ids[0]",
-            "=",
-            "pizzas.id_pizza"
-          ]
-        },
-        {
-          "type": {
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
@@ -1152,6 +1178,16 @@
             "Text",
             "+",
             "\"\nid of pizzas are: \"+pizzas_ids[0] +pizzas_ids[1] +pizzas_ids[2]"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "pizzas_max",
+            "=",
+            "pizzas_ids[RandomInRange(0, 2)]"
           ]
         }
       ]
