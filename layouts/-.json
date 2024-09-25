@@ -40,10 +40,10 @@
       "name": "customer texts",
       "objects": [
         {
-          "name": "customer_text_0_5"
+          "name": "customer_text_2"
         },
         {
-          "name": "customer_text_0_25"
+          "name": "customer_text_3"
         },
         {
           "name": "customer_text_1"
@@ -51,7 +51,20 @@
       ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "pizzas_X",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "pizzas_Y",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -111,7 +124,7 @@
       "height": 177,
       "keepRatio": true,
       "layer": "",
-      "name": "customer_text_0_25",
+      "name": "customer_text_3",
       "persistentUuid": "d22cea74-8c49-4d15-a763-7f462ae4e4d9",
       "width": 403,
       "x": 713,
@@ -184,20 +197,20 @@
           "Index": 2.0247e-320
         },
         {
-          "name": "LinkPathFinding",
-          "type": "LinkTools::LinkPathFinding",
-          "Acceleration": 200,
-          "SpeedMax": 200,
-          "Rotate": true,
-          "RotationSpeed": 180,
-          "AngleOffset": 0,
-          "isOnPath": false,
-          "NextNodeIndex": 2.0247e-320,
-          "NextNodeX": 2.0247e-320,
-          "NextNodeY": 2.0247e-320,
-          "Speed": 2.0247e-320,
-          "IsAtNode": false,
-          "NextNodeAngle": 2.0247e-320
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 3,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "name": "Pathfinding",
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
         }
       ],
       "animations": [
@@ -278,20 +291,20 @@
           "Index": 2.0247e-320
         },
         {
-          "name": "LinkPathFinding",
-          "type": "LinkTools::LinkPathFinding",
-          "Acceleration": 400,
-          "SpeedMax": 200,
-          "Rotate": true,
-          "RotationSpeed": 180,
-          "AngleOffset": 0,
-          "isOnPath": false,
-          "NextNodeIndex": 2.0247e-320,
-          "NextNodeX": 2.0247e-320,
-          "NextNodeY": 2.0247e-320,
-          "Speed": 2.0247e-320,
-          "IsAtNode": false,
-          "NextNodeAngle": 2.0247e-320
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "name": "Pathfinding",
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
         }
       ],
       "animations": [
@@ -372,20 +385,20 @@
           "Index": 2.0247e-320
         },
         {
-          "name": "LinkPathFinding",
-          "type": "LinkTools::LinkPathFinding",
-          "Acceleration": 400,
-          "SpeedMax": 200,
-          "Rotate": true,
-          "RotationSpeed": 180,
-          "AngleOffset": 0,
-          "isOnPath": false,
-          "NextNodeIndex": 2.0247e-320,
-          "NextNodeX": 2.0247e-320,
-          "NextNodeY": 2.0247e-320,
-          "Speed": 2.0247e-320,
-          "IsAtNode": false,
-          "NextNodeAngle": 2.0247e-320
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "name": "Pathfinding",
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
         }
       ],
       "animations": [
@@ -443,7 +456,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "customer_text_0_5",
+      "name": "customer_text_2",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -497,7 +510,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "customer_text_0_25",
+      "name": "customer_text_3",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -751,10 +764,10 @@
         "objectName": "background"
       },
       {
-        "objectName": "customer_text_0_5"
+        "objectName": "customer_text_2"
       },
       {
-        "objectName": "customer_text_0_25"
+        "objectName": "customer_text_3"
       },
       {
         "objectName": "customer_text_1"
@@ -799,13 +812,44 @@
           "actions": [
             {
               "type": {
-                "value": "AddForceVers"
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "pizzas_X",
+                "=",
+                "pizzas.X()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "pizzas_Y",
+                "=",
+                "pizzas.Y()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
               },
               "parameters": [
                 "pizzas",
-                "customer texts",
-                "300",
-                "1"
+                "=",
+                "6"
+              ]
+            },
+            {
+              "type": {
+                "value": "PathfindingBehavior::SetDestination"
+              },
+              "parameters": [
+                "pizzas",
+                "Pathfinding",
+                "yes",
+                "customer1.X()",
+                "customer1.Y()"
               ]
             },
             {
@@ -821,14 +865,53 @@
             },
             {
               "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "pizzas",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "CreateByName"
               },
               "parameters": [
                 "",
                 "pizzas",
                 "\"pizza\"+ToString(RandomInRange(1, 3))",
-                "pizzas.CenterX()",
-                "pizzas.CenterY()",
+                "pizzas_X",
+                "pizzas_Y",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "customer texts",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CreateByName"
+              },
+              "parameters": [
+                "",
+                "customer texts",
+                "\"customer_text_\"+ToString(RandomInRange(1,3))",
+                "customer texts.X()",
+                "customer texts.Y()",
                 ""
               ]
             }
@@ -965,12 +1048,12 @@
       "type": "FlippableCapability::FlippableBehavior"
     },
     {
-      "name": "LinkPathFinding",
-      "type": "LinkTools::LinkPathFinding"
-    },
-    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Pathfinding",
+      "type": "PathfindingBehavior::PathfindingBehavior"
     },
     {
       "name": "Resizable",
