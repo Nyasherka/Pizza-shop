@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "_1041_1077_1079_1099_1084_1103_1085_1085_1072_1103_32_1089_1094_1077_1085_1072",
-  "name": "Безымянная сцена",
+  "mangledName": "shop",
+  "name": "shop",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -33,6 +33,9 @@
         },
         {
           "name": "pizza3"
+        },
+        {
+          "name": "pizza4"
         }
       ]
     },
@@ -47,6 +50,9 @@
         },
         {
           "name": "customer_text_1"
+        },
+        {
+          "name": "customer_text_4"
         }
       ]
     }
@@ -77,21 +83,21 @@
       "value": 0
     },
     {
-      "name": "pizzas_ids",
+      "name": "slots_and_ids",
       "type": "array",
       "children": [
         {
           "type": "number",
-          "value": 0
+          "value": 1
         },
         {
           "folded": true,
           "type": "number",
-          "value": 0
+          "value": 2
         },
         {
           "type": "number",
-          "value": 0
+          "value": 3
         }
       ]
     }
@@ -107,8 +113,8 @@
       "name": "pizza2",
       "persistentUuid": "50342e9a-159c-4254-afd7-bc9151fb0d86",
       "width": 200,
-      "x": 44,
-      "y": 434,
+      "x": 236,
+      "y": 447,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -124,8 +130,8 @@
       "name": "pizza1",
       "persistentUuid": "44b38a72-18fc-4f20-8e11-774bd4dfa0e6",
       "width": 195,
-      "x": 229,
-      "y": 437,
+      "x": 23,
+      "y": 442,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -214,6 +220,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewText",
+      "persistentUuid": "8ae29767-a9c6-4120-94f1-bcf4814bee6e",
+      "width": 0,
+      "x": 96,
+      "y": 403,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -235,6 +257,12 @@
           "name": "id_pizza",
           "type": "number",
           "value": 2
+        },
+        {
+          "folded": true,
+          "name": "slot_index",
+          "type": "number",
+          "value": 1
         }
       ],
       "effects": [],
@@ -250,6 +278,8 @@
           "Index": 2.0247e-320
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 3,
@@ -260,10 +290,8 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 200,
-          "name": "Pathfinding",
           "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         }
       ],
       "animations": [
@@ -335,6 +363,12 @@
           "name": "id_pizza",
           "type": "number",
           "value": 1
+        },
+        {
+          "folded": true,
+          "name": "slot_index",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -350,6 +384,8 @@
           "Index": 2.0247e-320
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -360,10 +396,8 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 200,
-          "name": "Pathfinding",
           "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         }
       ],
       "animations": [
@@ -435,6 +469,12 @@
           "name": "id_pizza",
           "type": "number",
           "value": 3
+        },
+        {
+          "folded": true,
+          "name": "slot_index",
+          "type": "number",
+          "value": 2
         }
       ],
       "effects": [],
@@ -450,6 +490,8 @@
           "Index": 2.0247e-320
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -460,19 +502,18 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 200,
-          "name": "Pathfinding",
           "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         }
       ],
       "animations": [
         {
-          "name": "",
+          "name": "pizza1_0,25",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
@@ -536,15 +577,15 @@
       "effects": [],
       "behaviors": [
         {
-          "extraBorder": 0,
           "name": "Уничтожить вне экрана",
-          "type": "DestroyOutsideBehavior::DestroyOutside"
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 0
         }
       ],
       "string": "Я хочу 1/2 пиццы!",
       "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
       "textAlignment": "left",
-      "characterSize": 20,
+      "characterSize": 60,
       "color": {
         "b": 0,
         "g": 0,
@@ -567,7 +608,7 @@
         "text": "Я хочу 1/2 пиццы!",
         "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
         "textAlignment": "left",
-        "characterSize": 20,
+        "characterSize": 60,
         "color": "0;0;0"
       }
     },
@@ -652,7 +693,7 @@
       "string": "Я хочу 1 пиццу!",
       "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
       "textAlignment": "left",
-      "characterSize": 20,
+      "characterSize": 60,
       "color": {
         "b": 0,
         "g": 0,
@@ -675,7 +716,7 @@
         "text": "Я хочу 1 пиццу!",
         "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
         "textAlignment": "left",
-        "characterSize": 20,
+        "characterSize": 60,
         "color": "0;0;0"
       }
     },
@@ -689,13 +730,13 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 2,
           "leftEdgeAnchor": 1,
-          "name": "Anchor",
           "relativeToOriginalWindowSize": true,
           "rightEdgeAnchor": 2,
           "topEdgeAnchor": 1,
-          "type": "AnchorBehavior::AnchorBehavior",
           "useLegacyBottomAndRightAnchors": false
         }
       ],
@@ -852,19 +893,223 @@
         "characterSize": 60,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "pizza4",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "value_pizza",
+          "type": "number",
+          "value": 0.25
+        },
+        {
+          "folded": true,
+          "name": "id_pizza",
+          "type": "number",
+          "value": 4
+        },
+        {
+          "folded": true,
+          "name": "slot_index",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        },
+        {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "pizza2_0,25.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 327,
+                        "y": 7
+                      },
+                      {
+                        "x": 628,
+                        "y": 7
+                      },
+                      {
+                        "x": 628,
+                        "y": 307
+                      },
+                      {
+                        "x": 327,
+                        "y": 307
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "customer_text_4",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "customer_text_value",
+          "type": "number",
+          "value": 0.25
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Уничтожить вне экрана",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 0
+        }
+      ],
+      "string": "Я хочу 1/4 пиццы!",
+      "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Я хочу 1/4 пиццы!",
+        "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
+        "textAlignment": "left",
+        "characterSize": 60,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "NewText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0                 1                      2",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0                 1                      2",
+        "font": "",
+        "textAlignment": "left",
+        "characterSize": 40,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "pizza2"
-      },
-      {
         "objectName": "pizza1"
       },
       {
+        "objectName": "pizza2"
+      },
+      {
         "objectName": "pizza3"
+      },
+      {
+        "objectName": "pizza4"
       },
       {
         "objectName": "Test_text"
@@ -880,6 +1125,12 @@
       },
       {
         "objectName": "customer_text_1"
+      },
+      {
+        "objectName": "customer_text_4"
+      },
+      {
+        "objectName": "NewText"
       },
       {
         "objectName": "customer1"
@@ -899,38 +1150,7 @@
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "pizzas_ids[0]",
-            "=",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "pizzas_ids[1]",
-            "=",
-            "2"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "pizzas_ids[2]",
-            "=",
-            "3"
-          ]
-        }
-      ]
+      "actions": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -969,7 +1189,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "pizzas_X",
+                "pizza_X",
                 "=",
                 "pizzas.X()"
               ]
@@ -979,7 +1199,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "pizzas_Y",
+                "pizza_Y",
                 "=",
                 "pizzas.Y()"
               ]
@@ -992,6 +1212,27 @@
                 "pizzas",
                 "=",
                 "6"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "deleting_pizza_index",
+                "=",
+                "pizzas.slot_index"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Test_text",
+                "Text",
+                "=",
+                "\"local index = \"+deleting_pizza_index"
               ]
             },
             {
@@ -1036,15 +1277,69 @@
             },
             {
               "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "pizzas",
+                "id_pizza",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
                 "value": "CreateByName"
               },
               "parameters": [
                 "",
                 "pizzas",
-                "\"pizza\"+ToString(RandomInRange(1, 3))",
-                "pizzas_X",
-                "pizzas_Y",
+                "\"pizza\"+ToString(RandomInRange(1,4))",
+                "pizza_X",
+                "pizza_Y",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "pizzas",
+                "slot_index",
+                "=",
+                "deleting_pizza_index"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Test_text",
+                "Text",
+                "+",
+                "\"\nslot index = \"+pizzas.slot_index+\" id = \"+pizzas.id_pizza"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "slots_and_ids[deleting_pizza_index]",
+                "=",
+                "pizzas.id_pizza"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Test_text",
+                "Text",
+                "+",
+                "\"\narray is \"+slots_and_ids[0]+slots_and_ids[1]+slots_and_ids[2]"
               ]
             },
             {
@@ -1063,22 +1358,31 @@
               "parameters": [
                 "",
                 "customer texts",
-                "\"customer_text_\"+ToString(RandomInRange(1,3))",
+                "\"customer_text_\"+ToString(RandomInRange(1,4))",
                 "customer texts.X()",
                 "customer texts.Y()",
                 ""
               ]
+            }
+          ],
+          "variables": [
+            {
+              "folded": true,
+              "name": "pizza_X",
+              "type": "number",
+              "value": 0
             },
             {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "pizza1",
-                "id_pizza",
-                "=",
-                "5"
-              ]
+              "folded": true,
+              "name": "pizza_Y",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "deleting_pizza_index",
+              "type": "number",
+              "value": 0
             }
           ]
         },
@@ -1149,45 +1453,12 @@
         },
         {
           "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "Test_text",
-            "Text",
-            "=",
-            "\"min = \"+pizzas_min+\" max = \"+pizzas_max"
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "Test_text",
-            "Text",
-            "+",
-            "\" pizzas = \"+ToString(PickedInstancesCount(pizzas))"
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "Test_text",
-            "Text",
-            "+",
-            "\"\nid of pizzas are: \"+pizzas_ids[0] +pizzas_ids[1] +pizzas_ids[2]"
-          ]
-        },
-        {
-          "type": {
             "value": "SetNumberVariable"
           },
           "parameters": [
             "pizzas_max",
             "=",
-            "pizzas_ids[RandomInRange(0, 2)]"
+            "slots_and_ids[RandomInRange(0, 2)]"
           ]
         }
       ]

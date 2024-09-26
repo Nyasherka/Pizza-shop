@@ -86,7 +86,7 @@
         "alwaysLoaded": false,
         "file": "pizza1_0,25.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"pizza1_0,25.png\",\"extension\":\".png\"}",
         "name": "pizza1_0,25.png",
         "smoothed": true,
         "userAdded": false
@@ -119,6 +119,15 @@
         "name": "NewSprite2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pizza2_0,25.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pizza2_0,25.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -132,11 +141,15 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/-"
+      "referenceTo": "/layouts/shop"
     }
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/arraytools"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/buttonstates"
