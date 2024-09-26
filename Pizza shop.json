@@ -142,7 +142,7 @@
         "alwaysLoaded": false,
         "file": "pizza3.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"pizza3.png\",\"extension\":\".png\"}",
         "name": "pizza3.png",
         "smoothed": true,
         "userAdded": true
@@ -151,7 +151,7 @@
         "alwaysLoaded": false,
         "file": "pizza1_0,6.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"pizza1_0,6.png\",\"extension\":\".png\"}",
         "name": "pizza1_0,6.png",
         "smoothed": true,
         "userAdded": true
@@ -160,7 +160,7 @@
         "alwaysLoaded": false,
         "file": "pizza1_0,26.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"pizza1_0,26.png\",\"extension\":\".png\"}",
         "name": "pizza1_0,26.png",
         "smoothed": true,
         "userAdded": true
@@ -169,7 +169,7 @@
         "alwaysLoaded": false,
         "file": "pizza2_0,26.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"pizza2_0,26.png\",\"extension\":\".png\"}",
         "name": "pizza2_0,26.png",
         "smoothed": true,
         "userAdded": true

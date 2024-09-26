@@ -296,11 +296,12 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "pizza1_0,6",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
@@ -325,11 +326,11 @@
                         "y": 2
                       },
                       {
-                        "x": 87,
+                        "x": 86,
                         "y": 2
                       },
                       {
-                        "x": 87,
+                        "x": 86,
                         "y": 164
                       },
                       {
@@ -402,11 +403,12 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "pizza3",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
@@ -508,11 +510,12 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "pizza1_0,26",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
@@ -537,16 +540,16 @@
                         "y": 2
                       },
                       {
-                        "x": 87,
+                        "x": 86,
                         "y": 2
                       },
                       {
-                        "x": 87,
-                        "y": 84
+                        "x": 86,
+                        "y": 83
                       },
                       {
                         "x": 5,
-                        "y": 84
+                        "y": 83
                       }
                     ]
                   ]
@@ -950,11 +953,12 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "pizza2_0,26",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
@@ -975,7 +979,7 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 88,
+                        "x": 8,
                         "y": 2
                       },
                       {
@@ -984,11 +988,11 @@
                       },
                       {
                         "x": 170,
-                        "y": 84
+                        "y": 83
                       },
                       {
-                        "x": 88,
-                        "y": 84
+                        "x": 8,
+                        "y": 83
                       }
                     ]
                   ]
@@ -1276,17 +1280,6 @@
             },
             {
               "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "pizzas",
-                "id_pizza",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
                 "value": "CreateByName"
               },
               "parameters": [
@@ -1297,70 +1290,100 @@
                 "pizza_Y",
                 ""
               ]
-            },
+            }
+          ],
+          "events": [
             {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "pizzas",
-                "slot_index",
-                "=",
-                "deleting_pizza_index"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Test_text",
-                "Text",
-                "+",
-                "\"\nslot index = \"+pizzas.slot_index+\" id = \"+pizzas.id_pizza"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "slots_and_ids[deleting_pizza_index]",
-                "=",
-                "pizzas.id_pizza"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Test_text",
-                "Text",
-                "+",
-                "\"\narray is \"+slots_and_ids[0]+slots_and_ids[1]+slots_and_ids[2]"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "customer texts",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CreateByName"
-              },
-              "parameters": [
-                "",
-                "customer texts",
-                "\"customer_text_\"+ToString(RandomInRange(1,4))",
-                "customer texts.X()",
-                "customer texts.Y()",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PickedInstancesCount"
+                  },
+                  "parameters": [
+                    "pizzas",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "pizzas",
+                    "<",
+                    "400"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "pizzas",
+                    "slot_index",
+                    "=",
+                    "deleting_pizza_index"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Test_text",
+                    "Text",
+                    "+",
+                    "\"\nslot index = \"+pizzas.slot_index+\" id = \"+pizzas.id_pizza"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "slots_and_ids[deleting_pizza_index]",
+                    "=",
+                    "pizzas.id_pizza"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Test_text",
+                    "Text",
+                    "+",
+                    "\"\narray is \"+slots_and_ids[0]+slots_and_ids[1]+slots_and_ids[2]"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "customer texts",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CreateByName"
+                  },
+                  "parameters": [
+                    "",
+                    "customer texts",
+                    "\"customer_text_\"+ToString(RandomInRange(1,4))",
+                    "customer texts.X()",
+                    "customer texts.Y()",
+                    ""
+                  ]
+                }
               ]
             }
           ],
