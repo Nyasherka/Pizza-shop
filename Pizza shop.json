@@ -244,6 +244,20 @@
         "metadata": "",
         "name": "KGTraditionalFractions.ttf",
         "userAdded": true
+      },
+      {
+        "file": "KGTraditionalFractions2.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "KGTraditionalFractions2.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "KGTraditionalFractions3.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "KGTraditionalFractions3.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []

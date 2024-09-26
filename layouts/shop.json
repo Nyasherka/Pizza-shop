@@ -111,15 +111,15 @@
         {
           "folded": true,
           "type": "string",
-          "value": "1"
+          "value": "B"
         },
         {
           "type": "string",
-          "value": "1/2"
+          "value": "A"
         },
         {
           "type": "string",
-          "value": "1/4"
+          "value": "F"
         }
       ]
     },
@@ -266,32 +266,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 146,
+      "height": 133,
       "keepRatio": true,
       "layer": "",
       "name": "CustomerBBText",
       "persistentUuid": "3034cd54-9c21-47ff-9b11-1ecf697b41fc",
       "width": 409,
       "x": 762,
-      "y": 36,
+      "y": 49,
       "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 321,
-      "keepRatio": true,
-      "layer": "",
-      "name": "NewBBText",
-      "persistentUuid": "c8837988-35a9-4f36-bdec-dc43d95d04aa",
-      "width": 513,
-      "x": 359,
-      "y": 742,
-      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -327,7 +310,7 @@
           "folded": true,
           "name": "value_pizza_text",
           "type": "string",
-          "value": "1/2"
+          "value": "A"
         }
       ],
       "effects": [],
@@ -460,7 +443,7 @@
           "folded": true,
           "name": "value_pizza_text",
           "type": "string",
-          "value": "1"
+          "value": "B"
         }
       ],
       "effects": [],
@@ -605,7 +588,7 @@
           "folded": true,
           "name": "value_pizza_text",
           "type": "string",
-          "value": "1/4"
+          "value": "F"
         }
       ],
       "effects": [],
@@ -1062,7 +1045,7 @@
           "folded": true,
           "name": "value_pizza_text",
           "type": "string",
-          "value": "1/4"
+          "value": "F"
         }
       ],
       "effects": [],
@@ -1318,12 +1301,12 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "Я хочу  1/4 пиццы!",
+        "text": "\nЯ хочу[size=100] F [/size]пиццы!",
         "opacity": 255,
         "fontSize": 60,
         "visible": true,
         "color": "0;0;0",
-        "fontFamily": "ofont.ru_Batang.ttf",
+        "fontFamily": "KGTraditionalFractions3.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -1336,12 +1319,12 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[b]bold1/2[/b] [i]italic 1/2[/i] [size=15]smaller1/2[/size] [font=KGTraditionalFractions.ttf]times1/2[/font] font1/2\n[spacing=12]spaced out1/2[/spacing]\n[outline=yellow]outlined1/2[/outline] [shadow=red]DropShadow1/2[/shadow] ",
+        "text": "Я хочу [size=100]A[/size] пиццы!",
         "opacity": 255,
-        "fontSize": 70,
+        "fontSize": 60,
         "visible": true,
         "color": "0;0;0",
-        "fontFamily": "KGTraditionalFractions.ttf",
+        "fontFamily": "KGTraditionalFractions2.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -1381,9 +1364,6 @@
         "objectName": "CustomerBBText"
       },
       {
-        "objectName": "NewBBText"
-      },
-      {
         "objectName": "customer_text_4"
       },
       {
@@ -1394,6 +1374,9 @@
       },
       {
         "objectName": "customer1"
+      },
+      {
+        "objectName": "NewBBText"
       }
     ]
   },
@@ -1514,7 +1497,7 @@
               "parameters": [
                 "CustomerBBText",
                 "=",
-                "\"Спасибо!\""
+                "\"\nСпасибо!\""
               ]
             },
             {
@@ -1687,7 +1670,17 @@
                   "parameters": [
                     "CustomerBBText",
                     "=",
-                    "\"Я хочу \" + customer_choice_text + \" пиццы!\""
+                    "\"\nЯ хочу [size=100]\" + customer_choice_text + \"[/size] пиццы!\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "NewBBText",
+                    "+",
+                    "\"[font=KGTraditionalFractions]left[/font]\""
                   ]
                 }
               ],
