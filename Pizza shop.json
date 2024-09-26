@@ -128,6 +128,51 @@
         "name": "pizza2_0,25.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pizza2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pizza2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pizza3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pizza3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pizza1_0,6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pizza1_0,6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pizza1_0,26.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pizza1_0,26.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pizza2_0,26.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pizza2_0,26.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

@@ -124,12 +124,12 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 186,
+      "height": 176,
       "keepRatio": true,
       "layer": "",
       "name": "pizza1",
       "persistentUuid": "44b38a72-18fc-4f20-8e11-774bd4dfa0e6",
-      "width": 195,
+      "width": 175,
       "x": 23,
       "y": 442,
       "zOrder": 2,
@@ -305,7 +305,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "pizza1_0,5.png",
+                  "image": "pizza1_0,6.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -321,20 +321,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 18,
-                        "y": 7
+                        "x": 5,
+                        "y": 2
                       },
                       {
-                        "x": 319,
-                        "y": 7
+                        "x": 87,
+                        "y": 2
                       },
                       {
-                        "x": 319,
-                        "y": 604
+                        "x": 87,
+                        "y": 164
                       },
                       {
-                        "x": 18,
-                        "y": 604
+                        "x": 5,
+                        "y": 164
                       }
                     ]
                   ]
@@ -411,7 +411,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "pizza1.png",
+                  "image": "pizza3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -427,20 +427,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 18,
-                        "y": 7
+                        "x": 5,
+                        "y": 2
                       },
                       {
-                        "x": 622,
-                        "y": 7
+                        "x": 169,
+                        "y": 2
                       },
                       {
-                        "x": 622,
-                        "y": 604
+                        "x": 169,
+                        "y": 164
                       },
                       {
-                        "x": 18,
-                        "y": 604
+                        "x": 5,
+                        "y": 164
                       }
                     ]
                   ]
@@ -508,17 +508,16 @@
       ],
       "animations": [
         {
-          "name": "pizza1_0,25",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "pizza1_0,25.png",
+                  "image": "pizza1_0,26.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -534,20 +533,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 18,
-                        "y": 7
+                        "x": 5,
+                        "y": 2
                       },
                       {
-                        "x": 319,
-                        "y": 7
+                        "x": 87,
+                        "y": 2
                       },
                       {
-                        "x": 319,
-                        "y": 307
+                        "x": 87,
+                        "y": 84
                       },
                       {
-                        "x": 18,
-                        "y": 307
+                        "x": 5,
+                        "y": 84
                       }
                     ]
                   ]
@@ -960,7 +959,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "pizza2_0,25.png",
+                  "image": "pizza2_0,26.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -976,20 +975,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 327,
-                        "y": 7
+                        "x": 88,
+                        "y": 2
                       },
                       {
-                        "x": 628,
-                        "y": 7
+                        "x": 170,
+                        "y": 2
                       },
                       {
-                        "x": 628,
-                        "y": 307
+                        "x": 170,
+                        "y": 84
                       },
                       {
-                        "x": 327,
-                        "y": 307
+                        "x": 88,
+                        "y": 84
                       }
                     ]
                   ]
