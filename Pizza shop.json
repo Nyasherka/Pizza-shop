@@ -173,6 +173,77 @@
         "name": "pizza2_0,26.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "../../../Downloads/bonapart-modern.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\bonapart-modern.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "ofont.ru_Batang.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "ofont.ru_Batang.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "assets/TrainOne-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "d661675a9a76851ca93a75e64e9859522403e761929805ea28bd20c6e04fe810_TrainOne-Regular.ttf",
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/Japanese/d661675a9a76851ca93a75e64e9859522403e761929805ea28bd20c6e04fe810_TrainOne-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/NotoSansJP-Medium.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "a6525921aae3bf88b9975613bc154b306c4b1c1e727d48c06b5d2df19243750d_NotoSansJP-Medium.ttf",
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/Japanese/a6525921aae3bf88b9975613bc154b306c4b1c1e727d48c06b5d2df19243750d_NotoSansJP-Medium.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "ofont.ru_Batang2.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "ofont.ru_Batang2.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "../../../Downloads/DD_FontRegular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\DD_FontRegular.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "../../../Downloads/Bierahinia.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\Bierahinia.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "../../../Downloads/ofont.ru_Batang.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\ofont.ru_Batang.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "KGTraditionalFractions.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "KGTraditionalFractions.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []

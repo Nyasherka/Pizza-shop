@@ -103,6 +103,45 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "slots_and_values",
+      "type": "array",
+      "children": [
+        {
+          "folded": true,
+          "type": "string",
+          "value": "1"
+        },
+        {
+          "type": "string",
+          "value": "1/2"
+        },
+        {
+          "type": "string",
+          "value": "1/4"
+        }
+      ]
+    },
+    {
+      "name": "slots_and_numbers",
+      "type": "array",
+      "children": [
+        {
+          "type": "number",
+          "value": 1
+        },
+        {
+          "folded": true,
+          "type": "number",
+          "value": 0.5
+        },
+        {
+          "folded": true,
+          "type": "number",
+          "value": 0.25
+        }
+      ]
     }
   ],
   "instances": [
@@ -161,23 +200,6 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 177,
-      "keepRatio": true,
-      "layer": "",
-      "name": "customer_text_3",
-      "persistentUuid": "d22cea74-8c49-4d15-a763-7f462ae4e4d9",
-      "width": 403,
-      "x": 713,
-      "y": 32,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 720,
       "keepRatio": true,
       "layer": "",
@@ -201,8 +223,8 @@
       "name": "customer1",
       "persistentUuid": "93d9fe75-7539-4c6f-a347-2c3b85c4d6c8",
       "width": 378,
-      "x": 407,
-      "y": 2,
+      "x": 626,
+      "y": 203,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -217,8 +239,8 @@
       "name": "Test_text",
       "persistentUuid": "abf60c14-d512-43b3-bcd5-d54c1a3b120d",
       "width": 0,
-      "x": 101,
-      "y": 48,
+      "x": 51,
+      "y": 148,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -239,11 +261,45 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 146,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CustomerBBText",
+      "persistentUuid": "3034cd54-9c21-47ff-9b11-1ecf697b41fc",
+      "width": 409,
+      "x": 762,
+      "y": 36,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 321,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewBBText",
+      "persistentUuid": "c8837988-35a9-4f36-bdec-dc43d95d04aa",
+      "width": 513,
+      "x": 359,
+      "y": 742,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "pizza2",
       "type": "Sprite",
@@ -266,6 +322,12 @@
           "name": "slot_index",
           "type": "number",
           "value": 1
+        },
+        {
+          "folded": true,
+          "name": "value_pizza_text",
+          "type": "string",
+          "value": "1/2"
         }
       ],
       "effects": [],
@@ -325,8 +387,28 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 5,
-                        "y": 2
+                        "x": 15,
+                        "y": 129
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 100.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 71.5
+                      },
+                      {
+                        "x": 13,
+                        "y": 44
+                      },
+                      {
+                        "x": 34.5,
+                        "y": 21
+                      },
+                      {
+                        "x": 60,
+                        "y": 7.5
                       },
                       {
                         "x": 86,
@@ -337,8 +419,8 @@
                         "y": 164
                       },
                       {
-                        "x": 5,
-                        "y": 164
+                        "x": 51,
+                        "y": 158.5
                       }
                     ]
                   ]
@@ -350,7 +432,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "pizza1",
       "type": "Sprite",
@@ -373,6 +455,12 @@
           "name": "slot_index",
           "type": "number",
           "value": 0
+        },
+        {
+          "folded": true,
+          "name": "value_pizza_text",
+          "type": "string",
+          "value": "1"
         }
       ],
       "effects": [],
@@ -432,20 +520,52 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 5,
-                        "y": 2
+                        "x": 7.5,
+                        "y": 109
                       },
                       {
-                        "x": 169,
-                        "y": 2
+                        "x": 4,
+                        "y": 69
                       },
                       {
-                        "x": 169,
-                        "y": 164
+                        "x": 29,
+                        "y": 22
                       },
                       {
-                        "x": 5,
-                        "y": 164
+                        "x": 63.5,
+                        "y": 3
+                      },
+                      {
+                        "x": 111,
+                        "y": 3.5
+                      },
+                      {
+                        "x": 148,
+                        "y": 26
+                      },
+                      {
+                        "x": 168.5,
+                        "y": 61
+                      },
+                      {
+                        "x": 167,
+                        "y": 109.5
+                      },
+                      {
+                        "x": 146.5,
+                        "y": 141.5
+                      },
+                      {
+                        "x": 108.5,
+                        "y": 162.5
+                      },
+                      {
+                        "x": 61.5,
+                        "y": 161
+                      },
+                      {
+                        "x": 26,
+                        "y": 140.5
                       }
                     ]
                   ]
@@ -457,7 +577,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "pizza3",
       "type": "Sprite",
@@ -480,6 +600,12 @@
           "name": "slot_index",
           "type": "number",
           "value": 2
+        },
+        {
+          "folded": true,
+          "name": "value_pizza_text",
+          "type": "string",
+          "value": "1/4"
         }
       ],
       "effects": [],
@@ -539,8 +665,16 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 5,
-                        "y": 2
+                        "x": 10,
+                        "y": 50
+                      },
+                      {
+                        "x": 29.5,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 57.5,
+                        "y": 7
                       },
                       {
                         "x": 86,
@@ -822,8 +956,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -872,7 +1006,7 @@
       "string": "All good",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 60,
+      "characterSize": 30,
       "color": {
         "b": 0,
         "g": 0,
@@ -895,12 +1029,12 @@
         "text": "All good",
         "font": "",
         "textAlignment": "left",
-        "characterSize": 60,
+        "characterSize": 30,
         "color": "0;0;0"
       }
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "pizza4",
       "type": "Sprite",
@@ -923,6 +1057,12 @@
           "name": "slot_index",
           "type": "number",
           "value": 0
+        },
+        {
+          "folded": true,
+          "name": "value_pizza_text",
+          "type": "string",
+          "value": "1/4"
         }
       ],
       "effects": [],
@@ -982,20 +1122,28 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 8,
-                        "y": 2
+                        "x": 88.5,
+                        "y": 1.5
                       },
                       {
-                        "x": 170,
-                        "y": 2
+                        "x": 120,
+                        "y": 7.5
+                      },
+                      {
+                        "x": 144.5,
+                        "y": 23.5
+                      },
+                      {
+                        "x": 164,
+                        "y": 48.5
                       },
                       {
                         "x": 170,
                         "y": 83
                       },
                       {
-                        "x": 8,
-                        "y": 83
+                        "x": 90,
+                        "y": 84
                       }
                     ]
                   ]
@@ -1154,6 +1302,49 @@
         "characterSize": 60,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "CustomerBBText",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "folded": true,
+          "name": "customer_value",
+          "type": "number",
+          "value": 0.25
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Я хочу  1/4 пиццы!",
+        "opacity": 255,
+        "fontSize": 60,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "ofont.ru_Batang.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewBBText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]bold1/2[/b] [i]italic 1/2[/i] [size=15]smaller1/2[/size] [font=KGTraditionalFractions.ttf]times1/2[/font] font1/2\n[spacing=12]spaced out1/2[/spacing]\n[outline=yellow]outlined1/2[/outline] [shadow=red]DropShadow1/2[/shadow] ",
+        "opacity": 255,
+        "fontSize": 70,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "KGTraditionalFractions.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1185,6 +1376,12 @@
       },
       {
         "objectName": "customer_text_1"
+      },
+      {
+        "objectName": "CustomerBBText"
+      },
+      {
+        "objectName": "NewBBText"
       },
       {
         "objectName": "customer_text_4"
@@ -1242,7 +1439,7 @@
                 "pizzas",
                 "value_pizza",
                 "=",
-                "customer texts.customer_text_value"
+                "CustomerBBText.customer_value"
               ]
             }
           ],
@@ -1312,11 +1509,10 @@
             },
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                "value": "BBText::SetBBText"
               },
               "parameters": [
-                "customer texts",
-                "Text",
+                "CustomerBBText",
                 "=",
                 "\"Спасибо!\""
               ]
@@ -1345,7 +1541,7 @@
               "parameters": [
                 "",
                 "pizzas",
-                "\"pizza\"+ToString(RandomInRange(1,4))",
+                "\"pizza\"+ToString(RandomInRange(1, 3))",
                 "pizza_X",
                 "pizza_Y",
                 ""
@@ -1413,36 +1609,100 @@
                 },
                 {
                   "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "slots_and_values[deleting_pizza_index]",
+                    "=",
+                    "pizzas.value_pizza_text"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "slots_and_numbers[deleting_pizza_index]",
+                    "=",
+                    "pizzas.value_pizza"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                   },
                   "parameters": [
                     "Test_text",
                     "Text",
                     "+",
-                    "\"\narray is \"+slots_and_ids[0]+slots_and_ids[1]+slots_and_ids[2]"
+                    "\"\narray ids is \"+slots_and_ids[0]+\" \"+slots_and_ids[1]+\" \"+slots_and_ids[2] + \n\" array values is \" +slots_and_values[0] + \" \"+ slots_and_values[1] + \" \"+ slots_and_values[2] + \" \"+\n\"array of numbers is \" +slots_and_numbers[0] +  \" \"+ slots_and_numbers[1] +  \" \"+ slots_and_numbers[2]"
                   ]
                 },
                 {
                   "type": {
-                    "value": "Delete"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "customer texts",
-                    ""
+                    "customer_choice_number",
+                    "=",
+                    "slots_and_numbers[Random(VariableChildCount(slots_and_numbers) - 1)]"
                   ]
                 },
                 {
                   "type": {
-                    "value": "CreateByName"
+                    "value": "SetStringVariable"
                   },
                   "parameters": [
-                    "",
-                    "customer texts",
-                    "\"customer_text_\"+ToString(ArrayTools::RandomNumberInArray(slots_and_ids))",
-                    "customer texts.X()",
-                    "customer texts.Y()",
-                    ""
+                    "customer_choice_text",
+                    "=",
+                    "slots_and_values[ArrayTools::IndexOf(slots_and_numbers, customer_choice_number)]"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "CustomerBBText",
+                    "customer_value",
+                    "=",
+                    "customer_choice_number"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Test_text",
+                    "Text",
+                    "+",
+                    "\"\nchoice text \" + customer_choice_text + \" choice num \" + customer_choice_number"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "CustomerBBText",
+                    "=",
+                    "\"Я хочу \" + customer_choice_text + \" пиццы!\""
+                  ]
+                }
+              ],
+              "variables": [
+                {
+                  "folded": true,
+                  "name": "customer_choice_number",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "customer_choice_text",
+                  "type": "string",
+                  "value": "0"
                 }
               ]
             }
@@ -1479,68 +1739,21 @@
                 "pizzas",
                 "value_pizza",
                 "!=",
-                "customer texts.customer_text_value"
+                "CustomerBBText.customer_value"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                "value": "BBText::SetBBText"
               },
               "parameters": [
-                "customer texts",
-                "Text",
+                "CustomerBBText",
                 "+",
-                "\"А это не хочу!\""
+                "\"А эту не хочу!\""
               ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "AjoutObjConcern"
-          },
-          "parameters": [
-            "",
-            "pizzas"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "pizzas_min",
-            "=",
-            "min(pizzas.id_pizza,pizzas.id_pizza)"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "pizzas_max",
-            "=",
-            "max(pizzas.id_pizza,pizzas.id_pizza)"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "pizzas_max",
-            "=",
-            "slots_and_ids[RandomInRange(0, 2)]"
           ]
         }
       ]
