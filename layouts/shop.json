@@ -53,6 +53,9 @@
         },
         {
           "name": "customer_text_4"
+        },
+        {
+          "name": "customer_text_0"
         }
       ]
     }
@@ -584,7 +587,7 @@
           "extraBorder": 0
         }
       ],
-      "string": "Я хочу 1/2 пиццы!",
+      "string": "Я хочу 1/2 пиццы!2",
       "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 60,
@@ -607,7 +610,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Я хочу 1/2 пиццы!",
+        "text": "Я хочу 1/2 пиццы!2",
         "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
         "textAlignment": "left",
         "characterSize": 60,
@@ -638,7 +641,7 @@
           "extraBorder": 0
         }
       ],
-      "string": "Я хочу 1/4 пиццы!",
+      "string": "Я хочу 1/4 пиццы!3",
       "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 60,
@@ -661,7 +664,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Я хочу 1/4 пиццы!",
+        "text": "Я хочу 1/4 пиццы!3",
         "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
         "textAlignment": "left",
         "characterSize": 60,
@@ -692,7 +695,7 @@
           "extraBorder": 0
         }
       ],
-      "string": "Я хочу 1 пиццу!",
+      "string": "Я хочу 1 пиццу!1",
       "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 60,
@@ -715,7 +718,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Я хочу 1 пиццу!",
+        "text": "Я хочу 1 пиццу!1",
         "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
         "textAlignment": "left",
         "characterSize": 60,
@@ -1027,7 +1030,7 @@
           "extraBorder": 0
         }
       ],
-      "string": "Я хочу 1/4 пиццы!",
+      "string": "Я хочу 1/4 пиццы!4",
       "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 60,
@@ -1050,7 +1053,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Я хочу 1/4 пиццы!",
+        "text": "Я хочу 1/4 пиццы!4",
         "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
         "textAlignment": "left",
         "characterSize": 60,
@@ -1097,6 +1100,60 @@
         "characterSize": 40,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "customer_text_0",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "customer_text_value",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Уничтожить вне экрана",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 0
+        }
+      ],
+      "string": "Я хочу 0 пиццы!",
+      "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Я хочу 0 пиццы!",
+        "font": "3c044e6b9e82a6725e40c74eda3bd2afaf9a37052629dc897dd34d97822c36bd_Tangerine-Regular.ttf",
+        "textAlignment": "left",
+        "characterSize": 60,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1131,6 +1188,9 @@
       },
       {
         "objectName": "customer_text_4"
+      },
+      {
+        "objectName": "customer_text_0"
       },
       {
         "objectName": "NewText"
@@ -1378,7 +1438,7 @@
                   "parameters": [
                     "",
                     "customer texts",
-                    "\"customer_text_\"+ToString(RandomInRange(1,4))",
+                    "\"customer_text_\"+ToString(ArrayTools::RandomNumberInArray(slots_and_ids))",
                     "customer texts.X()",
                     "customer texts.Y()",
                     ""
