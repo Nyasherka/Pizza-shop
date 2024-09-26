@@ -105,7 +105,7 @@
       ]
     },
     {
-      "name": "slots_and_values",
+      "name": "slots_and_values_text",
       "type": "array",
       "children": [
         {
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "name": "slots_and_numbers",
+      "name": "slots_and_values_numbers",
       "type": "array",
       "children": [
         {
@@ -232,38 +232,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Test_text",
-      "persistentUuid": "abf60c14-d512-43b3-bcd5-d54c1a3b120d",
-      "width": 0,
-      "x": 51,
-      "y": 148,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "NewText",
-      "persistentUuid": "8ae29767-a9c6-4120-94f1-bcf4814bee6e",
-      "width": 0,
-      "x": 96,
-      "y": 403,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 133,
@@ -275,6 +243,22 @@
       "x": 762,
       "y": 49,
       "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Test_text",
+      "persistentUuid": "5669cd33-b36b-40f1-8ad9-7e458dd2d86d",
+      "width": 0,
+      "x": 27,
+      "y": 4,
+      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -290,7 +274,7 @@
       "variables": [
         {
           "folded": true,
-          "name": "value_pizza",
+          "name": "value_pizza_number",
           "type": "number",
           "value": 0.5
         },
@@ -423,7 +407,7 @@
       "variables": [
         {
           "folded": true,
-          "name": "value_pizza",
+          "name": "value_pizza_number",
           "type": "number",
           "value": 1
         },
@@ -568,7 +552,7 @@
       "variables": [
         {
           "folded": true,
-          "name": "value_pizza",
+          "name": "value_pizza_number",
           "type": "number",
           "value": 0.25
         },
@@ -1025,7 +1009,7 @@
       "variables": [
         {
           "folded": true,
-          "name": "value_pizza",
+          "name": "value_pizza_number",
           "type": "number",
           "value": 0.25
         },
@@ -1420,7 +1404,7 @@
               },
               "parameters": [
                 "pizzas",
-                "value_pizza",
+                "value_pizza_number",
                 "=",
                 "CustomerBBText.customer_value"
               ]
@@ -1571,31 +1555,10 @@
                 },
                 {
                   "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "Test_text",
-                    "Text",
-                    "+",
-                    "\"\nslot index = \"+pizzas.slot_index+\" id = \"+pizzas.id_pizza"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "slots_and_ids[deleting_pizza_index]",
-                    "=",
-                    "pizzas.id_pizza"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
-                    "slots_and_values[deleting_pizza_index]",
+                    "slots_and_values_text[deleting_pizza_index]",
                     "=",
                     "pizzas.value_pizza_text"
                   ]
@@ -1605,9 +1568,9 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "slots_and_numbers[deleting_pizza_index]",
+                    "slots_and_values_numbers[deleting_pizza_index]",
                     "=",
-                    "pizzas.value_pizza"
+                    "pizzas.value_pizza_number"
                   ]
                 },
                 {
@@ -1618,7 +1581,7 @@
                     "Test_text",
                     "Text",
                     "+",
-                    "\"\narray ids is \"+slots_and_ids[0]+\" \"+slots_and_ids[1]+\" \"+slots_and_ids[2] + \n\" array values is \" +slots_and_values[0] + \" \"+ slots_and_values[1] + \" \"+ slots_and_values[2] + \" \"+\n\"array of numbers is \" +slots_and_numbers[0] +  \" \"+ slots_and_numbers[1] +  \" \"+ slots_and_numbers[2]"
+                    "\"\narray ids is \" + slots_and_ids[0] + \" \" + slots_and_ids[1] + \" \" + slots_and_ids[2] + \" array values is \" + slots_and_values_text[0] + \" \" + slots_and_values_text[1] + \" \" + slots_and_values_text[2] + \" \" + \"array of numbers is \" + slots_and_values_numbers[0] + \" \" + slots_and_values_numbers[1] + \" \" + slots_and_values_numbers[2]"
                   ]
                 },
                 {
@@ -1628,7 +1591,7 @@
                   "parameters": [
                     "customer_choice_number",
                     "=",
-                    "slots_and_numbers[Random(VariableChildCount(slots_and_numbers) - 1)]"
+                    "slots_and_values_numbers[Random(VariableChildCount(slots_and_values_numbers) - 1)]"
                   ]
                 },
                 {
@@ -1638,7 +1601,7 @@
                   "parameters": [
                     "customer_choice_text",
                     "=",
-                    "slots_and_values[ArrayTools::IndexOf(slots_and_numbers, customer_choice_number)]"
+                    "slots_and_values_text[ArrayTools::IndexOf(slots_and_values_numbers, customer_choice_number)]"
                   ]
                 },
                 {
@@ -1730,7 +1693,7 @@
               },
               "parameters": [
                 "pizzas",
-                "value_pizza",
+                "value_pizza_number",
                 "!=",
                 "CustomerBBText.customer_value"
               ]
@@ -1747,6 +1710,44 @@
                 "\"А эту не хочу!\""
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TextObject::Text::FontSize"
+          },
+          "parameters": [
+            "customer_text_4",
+            "=",
+            "10"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "slots_and_ids[deleting_pizza_index]",
+            "=",
+            "pizzas.id_pizza"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Test_text",
+            "Text",
+            "+",
+            "\"\nslot index = \"+pizzas.slot_index+\" id = \"+pizzas.id_pizza"
           ]
         }
       ]
