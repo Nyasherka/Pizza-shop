@@ -282,8 +282,8 @@
       "name": "pizza5",
       "persistentUuid": "50342e9a-159c-4254-afd7-bc9151fb0d86",
       "width": 200,
-      "x": 235,
-      "y": 390,
+      "x": 345,
+      "y": 470,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -299,8 +299,8 @@
       "name": "pizza1",
       "persistentUuid": "44b38a72-18fc-4f20-8e11-774bd4dfa0e6",
       "width": 175,
-      "x": 50,
-      "y": 382,
+      "x": 155,
+      "y": 435,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -316,8 +316,8 @@
       "name": "pizza6",
       "persistentUuid": "cfb0d03a-5f7f-4027-a314-33ef46e9cb50",
       "width": 217,
-      "x": 463,
-      "y": 383,
+      "x": 536,
+      "y": 481,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -417,8 +417,8 @@
       "name": "pizza9",
       "persistentUuid": "e9e55a14-be91-4f66-b24b-2a93ff7d9fae",
       "width": 0,
-      "x": 683,
-      "y": 385,
+      "x": 761,
+      "y": 470,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -514,8 +514,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 86.5,
+                    "y": 84.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -635,8 +635,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 87,
+                    "y": 53.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -768,8 +768,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 84.5,
+                    "y": 81
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1065,8 +1065,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 91,
+                    "y": 81.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1216,8 +1216,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 87,
+                    "y": 81
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1316,8 +1316,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 84.5,
+                    "y": 81
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1417,8 +1417,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 87,
+                    "y": 81
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1518,8 +1518,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 88,
+                    "y": 84.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1619,8 +1619,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 84.5,
+                    "y": 81.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1806,14 +1806,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 103,
+                    "y": 1
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 273,
+                    "y": 219
                   },
                   "customCollisionMask": [
                     [
@@ -1870,10 +1870,10 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 101.5,
+                    "y": 168.5
                   },
                   "customCollisionMask": [
                     [
@@ -1926,14 +1926,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 21,
+                    "y": 0.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 230,
+                    "y": 231
                   },
                   "customCollisionMask": [
                     [
@@ -2143,8 +2143,8 @@
                 "pizzas",
                 "Pathfinding",
                 "yes",
-                "customers.X()",
-                "customers.Y()"
+                "customers.CenterX()",
+                "customers.CenterY()"
               ]
             },
             {
@@ -2203,7 +2203,7 @@
               "parameters": [
                 "",
                 "customers",
-                "\"customer2\"",
+                "\"customer\"+ToString(RandomInRange(1,4))",
                 "customer_x",
                 "customer_y",
                 "\"customers\""
