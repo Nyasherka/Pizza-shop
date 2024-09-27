@@ -258,6 +258,51 @@
         "metadata": "",
         "name": "KGTraditionalFractions3.ttf",
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pizza1_0,2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pizza1_0,2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pizza1_0,4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pizza1_0,4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pizza4_0,5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pizza4_0,5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pizza3_0,5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pizza3_0,5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pizza2_0,5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pizza2_0,5.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
