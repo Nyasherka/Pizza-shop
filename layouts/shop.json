@@ -57,68 +57,6 @@
   ],
   "variables": [
     {
-      "folded": true,
-      "name": "pizzas_X",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "folded": true,
-      "name": "pizzas_Y",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "folded": true,
-      "name": "pizzas_min",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "folded": true,
-      "name": "pizzas_max",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "slots_and_ids",
-      "type": "array",
-      "children": [
-        {
-          "type": "number",
-          "value": 1
-        },
-        {
-          "folded": true,
-          "type": "number",
-          "value": 2
-        },
-        {
-          "type": "number",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "slots_and_values_text",
-      "type": "array",
-      "children": [
-        {
-          "folded": true,
-          "type": "string",
-          "value": "B"
-        },
-        {
-          "type": "string",
-          "value": "A"
-        },
-        {
-          "type": "string",
-          "value": "F"
-        }
-      ]
-    },
-    {
       "name": "slots_and_values_numbers",
       "type": "array",
       "children": [
@@ -135,6 +73,10 @@
           "folded": true,
           "type": "number",
           "value": 0.25
+        },
+        {
+          "type": "number",
+          "value": 0.4
         }
       ]
     },
@@ -451,7 +393,14 @@
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "slot_index",
+          "type": "number",
+          "value": 3
+        }
+      ]
     }
   ],
   "objects": [
@@ -825,7 +774,21 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "KawaseBlur",
+          "name": "Effect",
+          "doubleParameters": {
+            "blur": 1,
+            "padding": 0,
+            "pixelizeX": 1,
+            "pixelizeY": 1,
+            "quality": 3
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "Anchor",
@@ -1785,9 +1748,6 @@
         "objectName": "pizza2"
       },
       {
-        "objectName": "dialog_window"
-      },
-      {
         "objectName": "pizza3"
       },
       {
@@ -1819,6 +1779,9 @@
       },
       {
         "objectName": "CustomerBBText"
+      },
+      {
+        "objectName": "dialog_window"
       },
       {
         "objectName": "customer1"
@@ -2157,19 +2120,7 @@
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "Test_text",
-            "Text",
-            "+",
-            "\"\narray ids is \" + slots_and_ids[0] + \" \" + slots_and_ids[1] + \" \" + slots_and_ids[2] + \" array values is \" + slots_and_values_text[0] + \" \" + slots_and_values_text[1] + \" \" + slots_and_values_text[2] + \" \" + \"array of numbers is \" + slots_and_values_numbers[0] + \" \" + slots_and_values_numbers[1] + \" \" + slots_and_values_numbers[2]"
-          ]
-        }
-      ]
+      "actions": []
     }
   ],
   "layers": [
