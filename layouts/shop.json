@@ -2679,6 +2679,18 @@
             },
             {
               "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "ka-ching.mp3",
+                "",
+                "30",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "BBText::SetBBText"
               },
               "parameters": [
@@ -2729,6 +2741,18 @@
           ],
           "events": [
             {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 180,
+                "g": 112,
+                "r": 77,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "new customer appears only one time"
+            },
+            {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2767,14 +2791,19 @@
                     "50"
                   ]
                 }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": []
-                }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 146,
+                "g": 118,
+                "r": 86,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "what happens after right pizza died (choosing a right question for customer)"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -2896,18 +2925,6 @@
                   "value": "0"
                 }
               ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "what happens after right pizza died (choosing a right question for customer)"
             }
           ],
           "variables": [
@@ -2955,6 +2972,18 @@
                 "CustomerBBText",
                 "+",
                 "\"А эту не хочу!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "aa204fe221c7547db2278bd11d6d0e7f773000fa408555920e06b947b0ee001d_Confirm_05.aac",
+                "",
+                "30",
+                "1"
               ]
             }
           ],

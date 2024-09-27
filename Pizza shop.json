@@ -438,6 +438,44 @@
         "name": "Bonifacyi.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/Coins 2.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "b9ab279dc8ac9ec62164444742695824b9806e01cb49f710937ebdce919e72ee_Coins 2.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/Coins/b9ab279dc8ac9ec62164444742695824b9806e01cb49f710937ebdce919e72ee_Coins 2.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "ka-ching.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "ka-ching.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Confirm_05.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "aa204fe221c7547db2278bd11d6d0e7f773000fa408555920e06b947b0ee001d_Confirm_05.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Interface/Interface Bleeps/aa204fe221c7547db2278bd11d6d0e7f773000fa408555920e06b947b0ee001d_Confirm_05.aac",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
