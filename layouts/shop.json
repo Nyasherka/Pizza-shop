@@ -2591,14 +2591,6 @@
                 "=",
                 "CustomerBBText.customer_value"
               ]
-            },
-            {
-              "type": {
-                "value": "Visible"
-              },
-              "parameters": [
-                "customers"
-              ]
             }
           ],
           "actions": [
@@ -2677,6 +2669,26 @@
             },
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "money_total",
+                "+",
+                "money_add"
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "MoneyBBText",
+                "=",
+                "\"[b][color=yellow]\"+money_total+\"[/color][/b]\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
@@ -2694,19 +2706,6 @@
             },
             {
               "type": {
-                "value": "CreateByName"
-              },
-              "parameters": [
-                "",
-                "pizzas",
-                "\"pizza\"+ToString(RandomInRange(1, 9))",
-                "pizza_X",
-                "pizza_Y",
-                "\"pizzas\""
-              ]
-            },
-            {
-              "type": {
                 "value": "Delete"
               },
               "parameters": [
@@ -2720,15 +2719,63 @@
               },
               "parameters": [
                 "",
-                "customers",
-                "\"customer\"+ToString(RandomInRange(2,11))",
-                "customer_x",
-                "customer_y",
-                "\"customers\""
+                "pizzas",
+                "\"pizza\"+ToString(RandomInRange(1, 9))",
+                "pizza_X",
+                "pizza_Y",
+                "\"pizzas\""
               ]
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneInstancesCount"
+                  },
+                  "parameters": [
+                    "",
+                    "customers",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "CreateByName"
+                  },
+                  "parameters": [
+                    "",
+                    "customers",
+                    "\"customer\"+ToString(RandomInRange(2,11))",
+                    "customer_x",
+                    "customer_y",
+                    "\"customers\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "money_add",
+                    "=",
+                    "50"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -2816,6 +2863,17 @@
                     "Test_text",
                     "Text",
                     "+",
+                    "\"\nvalue array = \"+slots_and_values_numbers[0] + \" \" + slots_and_values_numbers[1] + \" \" + slots_and_values_numbers[2] + \" \" + slots_and_values_numbers[3]"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Test_text",
+                    "Text",
+                    "+",
                     "\"\nchoice text \" + customer_choice_text + \" choice num \" + CustomerBBText.customer_value"
                   ]
                 },
@@ -2838,6 +2896,18 @@
                   "value": "0"
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "what happens after right pizza died (choosing a right question for customer)"
             }
           ],
           "variables": [
@@ -2887,25 +2957,38 @@
                 "\"А эту не хочу!\""
               ]
             }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "money_add",
+                    "!=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "money_add",
+                    "-",
+                    "10"
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "TextObject::Text::FontSize"
-          },
-          "parameters": [
-            "Test_text",
-            "=",
-            "10"
-          ]
-        }
-      ],
-      "actions": []
     }
   ],
   "layers": [
