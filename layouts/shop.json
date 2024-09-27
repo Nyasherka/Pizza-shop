@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4789341884535245,
+    "zoomFactor": 0.4633111824513976,
     "windowMask": false
   },
   "objectsGroups": [
@@ -290,6 +290,18 @@
       "name": "customer_y",
       "type": "number",
       "value": 29
+    },
+    {
+      "folded": true,
+      "name": "money_total",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "money_add",
+      "type": "number",
+      "value": 50
     }
   ],
   "instances": [
@@ -367,7 +379,7 @@
       "depth": 1,
       "height": 133,
       "keepRatio": true,
-      "layer": "",
+      "layer": "customers",
       "name": "CustomerBBText",
       "persistentUuid": "3034cd54-9c21-47ff-9b11-1ecf697b41fc",
       "width": 409,
@@ -384,7 +396,7 @@
       "depth": 1,
       "height": 208,
       "keepRatio": true,
-      "layer": "",
+      "layer": "customers",
       "name": "dialog_window",
       "persistentUuid": "be7d806b-bb82-40cd-9c5b-750f980afe78",
       "width": 504,
@@ -463,6 +475,22 @@
       "x": 436,
       "y": 29,
       "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "pizzas",
+      "name": "MoneyBBText",
+      "persistentUuid": "3cf57a6a-f99a-4993-b364-0a05bd0213cb",
+      "width": 0,
+      "x": 1000,
+      "y": 301,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1832,8 +1860,8 @@
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 273,
-                    "y": 219
+                    "x": 315.5,
+                    "y": 269
                   },
                   "customCollisionMask": [
                     [
@@ -1886,8 +1914,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": -3,
-                    "y": -2
+                    "x": -49,
+                    "y": 2.5
                   },
                   "centerPoint": {
                     "automatic": false,
@@ -1946,8 +1974,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 21,
-                    "y": 0.5
+                    "x": 90.5,
+                    "y": -2
                   },
                   "centerPoint": {
                     "automatic": false,
@@ -2306,8 +2334,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": -47,
+                    "y": 2
                   },
                   "centerPoint": {
                     "automatic": false,
@@ -2401,6 +2429,24 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "MoneyBBText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b][color=yellow]000[/color][/b]",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Arial",
+        "align": "left",
+        "wordWrap": true
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2468,6 +2514,9 @@
       },
       {
         "objectName": "customer10"
+      },
+      {
+        "objectName": "MoneyBBText"
       },
       {
         "objectName": "customer9"
