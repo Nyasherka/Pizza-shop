@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4633111824513976,
+    "zoomFactor": 0.44819780454103547,
     "windowMask": false
   },
   "objectsGroups": [
@@ -452,22 +452,6 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "pizzas",
-      "name": "Test_text",
-      "persistentUuid": "0941d80b-aed6-4d4c-af20-44470cbdc5a6",
-      "width": 0,
-      "x": 366,
-      "y": 497,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
       "layer": "",
       "name": "customer5",
       "persistentUuid": "ccece520-168a-4f8e-8d01-5db32be77e19",
@@ -491,6 +475,22 @@
       "x": 1000,
       "y": 301,
       "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "debug",
+      "name": "Test_text",
+      "persistentUuid": "090371bd-bc6e-4605-91a2-fbb37a395a7d",
+      "width": 0,
+      "x": 359,
+      "y": 450,
+      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2447,6 +2447,24 @@
         "align": "left",
         "wordWrap": true
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewBBText2",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]bold[/b] [i]italic[/i] [size=15]smaller[/size] [font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] [shadow=red]DropShadow[/shadow] ",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Arial",
+        "align": "left",
+        "wordWrap": true
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2478,6 +2496,9 @@
       },
       {
         "objectName": "pizza9"
+      },
+      {
+        "objectName": "NewBBText2"
       },
       {
         "objectName": "Test_text"
@@ -3143,6 +3164,39 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "pizzas",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "debug",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

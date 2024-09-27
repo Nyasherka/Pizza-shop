@@ -476,6 +476,60 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Interface/Interface Bleeps/aa204fe221c7547db2278bd11d6d0e7f773000fa408555920e06b947b0ee001d_Confirm_05.aac",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pngtree-delicious-pizza-pattern-seamless-italian-fast-food-background-print-texture-image_13906061.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pngtree-delicious-pizza-pattern-seamless-italian-fast-food-background-print-texture-image_13906061.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "5598cc963efb8a82d1c92ce89767211b.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "5598cc963efb8a82d1c92ce89767211b.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "button_play.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "button_play.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "button_text_round.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "button_text_round.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "button_text.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "button_text.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "button_replay.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "button_replay.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -490,6 +544,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/shop"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/menu"
     }
   ],
   "externalEvents": [],
