@@ -53,6 +53,23 @@
           "name": "pizza4"
         }
       ]
+    },
+    {
+      "name": "customers",
+      "objects": [
+        {
+          "name": "customer1"
+        },
+        {
+          "name": "customer2"
+        },
+        {
+          "name": "customer3"
+        },
+        {
+          "name": "customer4"
+        }
+      ]
     }
   ],
   "variables": [
@@ -240,6 +257,18 @@
           ]
         }
       ]
+    },
+    {
+      "folded": true,
+      "name": "customer_x",
+      "type": "number",
+      "value": 436
+    },
+    {
+      "folded": true,
+      "name": "customer_y",
+      "type": "number",
+      "value": 29
     }
   ],
   "instances": [
@@ -249,7 +278,7 @@
       "depth": 1,
       "height": 183,
       "keepRatio": true,
-      "layer": "",
+      "layer": "pizzas",
       "name": "pizza5",
       "persistentUuid": "50342e9a-159c-4254-afd7-bc9151fb0d86",
       "width": 200,
@@ -266,7 +295,7 @@
       "depth": 1,
       "height": 176,
       "keepRatio": true,
-      "layer": "",
+      "layer": "pizzas",
       "name": "pizza1",
       "persistentUuid": "44b38a72-18fc-4f20-8e11-774bd4dfa0e6",
       "width": 175,
@@ -283,7 +312,7 @@
       "depth": 1,
       "height": 212,
       "keepRatio": true,
-      "layer": "",
+      "layer": "pizzas",
       "name": "pizza6",
       "persistentUuid": "cfb0d03a-5f7f-4027-a314-33ef46e9cb50",
       "width": 217,
@@ -317,7 +346,7 @@
       "depth": 1,
       "height": 391,
       "keepRatio": true,
-      "layer": "",
+      "layer": "customers",
       "name": "customer1",
       "persistentUuid": "93d9fe75-7539-4c6f-a347-2c3b85c4d6c8",
       "width": 378,
@@ -368,7 +397,7 @@
       "depth": 1,
       "height": 720,
       "keepRatio": true,
-      "layer": "",
+      "layer": "table",
       "name": "counter_table",
       "persistentUuid": "099748b9-8a8d-4e83-a7f8-64fc166d9b00",
       "width": 1282,
@@ -384,13 +413,13 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "pizzas",
       "name": "pizza9",
       "persistentUuid": "e9e55a14-be91-4f66-b24b-2a93ff7d9fae",
       "width": 0,
       "x": 683,
       "y": 385,
-      "zOrder": 9,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [
@@ -407,7 +436,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "pizzas",
       "name": "Test_text",
       "persistentUuid": "0941d80b-aed6-4d4c-af20-44470cbdc5a6",
       "width": 0,
@@ -1752,6 +1781,186 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "customer2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bageera.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 60
+                      },
+                      {
+                        "x": 403,
+                        "y": 60
+                      },
+                      {
+                        "x": 403,
+                        "y": 493
+                      },
+                      {
+                        "x": 5,
+                        "y": 493
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "customer3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Mulan2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 25,
+                        "y": 4
+                      },
+                      {
+                        "x": 187,
+                        "y": 4
+                      },
+                      {
+                        "x": 187,
+                        "y": 590
+                      },
+                      {
+                        "x": 25,
+                        "y": 590
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "customer4",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Vinnie.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 425,
+                        "y": 0
+                      },
+                      {
+                        "x": 425,
+                        "y": 500
+                      },
+                      {
+                        "x": 0,
+                        "y": 500
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1804,6 +2013,15 @@
       },
       {
         "objectName": "NewBBText"
+      },
+      {
+        "objectName": "customer2"
+      },
+      {
+        "objectName": "customer3"
+      },
+      {
+        "objectName": "customer4"
       }
     ]
   },
@@ -1925,8 +2143,8 @@
                 "pizzas",
                 "Pathfinding",
                 "yes",
-                "customer1.X()",
-                "customer1.Y()"
+                "customers.X()",
+                "customers.Y()"
               ]
             },
             {
@@ -1966,7 +2184,29 @@
                 "\"pizza\"+ToString(RandomInRange(1, 9))",
                 "pizza_X",
                 "pizza_Y",
+                "\"pizzas\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "customers",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CreateByName"
+              },
+              "parameters": [
+                "",
+                "customers",
+                "\"customer2\"",
+                "customer_x",
+                "customer_y",
+                "\"customers\""
               ]
             }
           ],
@@ -2177,6 +2417,105 @@
           "width": 0
         }
       ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "customers",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "table",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "pizzas",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
       "effects": [
         {
           "effectType": "Scene3D::HemisphereLight",

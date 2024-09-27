@@ -339,6 +339,42 @@
         "name": "counter_better.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Bageera.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bageera.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Mulan.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Mulan.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Vinnie.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Vinnie.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Mulan2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Mulan2.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
