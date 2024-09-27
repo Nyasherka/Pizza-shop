@@ -401,6 +401,22 @@
           "value": 3
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Test_text",
+      "persistentUuid": "0941d80b-aed6-4d4c-af20-44470cbdc5a6",
+      "width": 0,
+      "x": 366,
+      "y": 497,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1976,11 +1992,22 @@
                   "parameters": [
                     "pizzas",
                     "<",
-                    "400"
+                    "350"
                   ]
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Test_text",
+                    "Text",
+                    "+",
+                    "\"condition started\""
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetNumberObjectVariable"
