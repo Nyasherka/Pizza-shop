@@ -311,9 +311,9 @@
       "name": "pizza5",
       "persistentUuid": "50342e9a-159c-4254-afd7-bc9151fb0d86",
       "width": 200,
-      "x": 236,
-      "y": 447,
-      "zOrder": 1,
+      "x": 235,
+      "y": 390,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -328,9 +328,9 @@
       "name": "pizza1",
       "persistentUuid": "44b38a72-18fc-4f20-8e11-774bd4dfa0e6",
       "width": 175,
-      "x": 23,
-      "y": 442,
-      "zOrder": 2,
+      "x": 50,
+      "y": 382,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -345,8 +345,8 @@
       "name": "pizza6",
       "persistentUuid": "cfb0d03a-5f7f-4027-a314-33ef46e9cb50",
       "width": 217,
-      "x": 484,
-      "y": 441,
+      "x": 463,
+      "y": 383,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -379,9 +379,9 @@
       "name": "customer1",
       "persistentUuid": "93d9fe75-7539-4c6f-a347-2c3b85c4d6c8",
       "width": 378,
-      "x": 626,
-      "y": 203,
-      "zOrder": 5,
+      "x": 624,
+      "y": 219,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -405,15 +405,49 @@
     },
     {
       "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 208,
+      "keepRatio": true,
+      "layer": "",
+      "name": "dialog_window",
+      "persistentUuid": "be7d806b-bb82-40cd-9c5b-750f980afe78",
+      "width": 504,
+      "x": 733,
+      "y": 39,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 720,
+      "keepRatio": true,
+      "layer": "",
+      "name": "counter_table",
+      "persistentUuid": "099748b9-8a8d-4e83-a7f8-64fc166d9b00",
+      "width": 1282,
+      "x": -3,
+      "y": 150,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Test_text",
-      "persistentUuid": "5669cd33-b36b-40f1-8ad9-7e458dd2d86d",
+      "name": "pizza9",
+      "persistentUuid": "e9e55a14-be91-4f66-b24b-2a93ff7d9fae",
       "width": 0,
-      "x": 27,
-      "y": 4,
+      "x": 683,
+      "y": 385,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -816,7 +850,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
+                  "image": "icy2_5ebz_221114.jpg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -836,16 +870,16 @@
                         "y": 0
                       },
                       {
-                        "x": 64,
+                        "x": 6110,
                         "y": 0
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 6110,
+                        "y": 3639
                       },
                       {
                         "x": 0,
-                        "y": 64
+                        "y": 3639
                       }
                     ]
                   ]
@@ -1612,6 +1646,133 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "dialog_window",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Рисунок1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 616,
+                        "y": 0
+                      },
+                      {
+                        "x": 616,
+                        "y": 242
+                      },
+                      {
+                        "x": 0,
+                        "y": 242
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "counter_table",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "counter_better.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 120
+                      },
+                      {
+                        "x": 1182,
+                        "y": 120
+                      },
+                      {
+                        "x": 1182,
+                        "y": 709
+                      },
+                      {
+                        "x": 18,
+                        "y": 709
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1622,6 +1783,9 @@
       },
       {
         "objectName": "pizza2"
+      },
+      {
+        "objectName": "dialog_window"
       },
       {
         "objectName": "pizza3"
@@ -1651,6 +1815,9 @@
         "objectName": "background"
       },
       {
+        "objectName": "counter_table"
+      },
+      {
         "objectName": "CustomerBBText"
       },
       {
@@ -1674,7 +1841,19 @@
           ]
         }
       ],
-      "actions": []
+      "actions": [
+        {
+          "type": {
+            "value": "Sticker::Sticker::Stick"
+          },
+          "parameters": [
+            "dialog_window",
+            "Sticker",
+            "CustomerBBText",
+            ""
+          ]
+        }
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -2075,6 +2254,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Sticker",
+      "type": "Sticker::Sticker"
     },
     {
       "name": "Text",

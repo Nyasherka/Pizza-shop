@@ -303,6 +303,42 @@
         "name": "pizza2_0,5.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Рисунок1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Рисунок1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "icy2_5ebz_221114.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "icy2_5ebz_221114.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ty9r_ufs2_221020.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "ty9r_ufs2_221020.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "counter_better.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "counter_better.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -321,6 +357,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/sticker"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/arraytools"
