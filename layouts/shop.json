@@ -142,6 +142,167 @@
           "value": 0.25
         }
       ]
+    },
+    {
+      "name": "values_and_texts",
+      "type": "structure",
+      "children": [
+        {
+          "name": "0.15",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "string",
+              "value": "O"
+            }
+          ]
+        },
+        {
+          "name": "0.2",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "string",
+              "value": "J"
+            }
+          ]
+        },
+        {
+          "name": "0.25",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "string",
+              "value": "F"
+            }
+          ]
+        },
+        {
+          "name": "0.33",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "C"
+            },
+            {
+              "type": "string",
+              "value": "P"
+            }
+          ]
+        },
+        {
+          "name": "0.4",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "K"
+            }
+          ]
+        },
+        {
+          "name": "0.5",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "A"
+            },
+            {
+              "type": "string",
+              "value": "G"
+            },
+            {
+              "type": "string",
+              "value": "Q"
+            }
+          ]
+        },
+        {
+          "name": "0.6",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "L"
+            }
+          ]
+        },
+        {
+          "name": "0.66",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "D"
+            },
+            {
+              "type": "string",
+              "value": "R"
+            }
+          ]
+        },
+        {
+          "name": "0.75",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "H"
+            }
+          ]
+        },
+        {
+          "name": "0.8",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "M"
+            }
+          ]
+        },
+        {
+          "name": "0.85",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "S"
+            }
+          ]
+        },
+        {
+          "name": "1",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "B"
+            },
+            {
+              "type": "string",
+              "value": "E"
+            },
+            {
+              "type": "string",
+              "value": "I"
+            },
+            {
+              "type": "string",
+              "value": "N"
+            },
+            {
+              "type": "string",
+              "value": "T"
+            }
+          ]
+        }
+      ]
     }
   ],
   "instances": [
@@ -1555,43 +1716,13 @@
                 },
                 {
                   "type": {
-                    "value": "SetStringVariable"
+                    "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "slots_and_values_text[deleting_pizza_index]",
-                    "=",
-                    "pizzas.value_pizza_text"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "slots_and_values_numbers[deleting_pizza_index]",
+                    "CustomerBBText",
+                    "customer_value",
                     "=",
                     "pizzas.value_pizza_number"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "Test_text",
-                    "Text",
-                    "+",
-                    "\"\narray ids is \" + slots_and_ids[0] + \" \" + slots_and_ids[1] + \" \" + slots_and_ids[2] + \" array values is \" + slots_and_values_text[0] + \" \" + slots_and_values_text[1] + \" \" + slots_and_values_text[2] + \" \" + \"array of numbers is \" + slots_and_values_numbers[0] + \" \" + slots_and_values_numbers[1] + \" \" + slots_and_values_numbers[2]"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "customer_choice_number",
-                    "=",
-                    "slots_and_values_numbers[Random(VariableChildCount(slots_and_values_numbers) - 1)]"
                   ]
                 },
                 {
@@ -1601,18 +1732,7 @@
                   "parameters": [
                     "customer_choice_text",
                     "=",
-                    "slots_and_values_text[ArrayTools::IndexOf(slots_and_values_numbers, customer_choice_number)]"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "CustomerBBText",
-                    "customer_value",
-                    "=",
-                    "customer_choice_number"
+                    "ArrayTools::RandomStringInArray(values_and_texts[ToString(pizzas.value_pizza_number)])"
                   ]
                 },
                 {
@@ -1623,7 +1743,7 @@
                     "Test_text",
                     "Text",
                     "+",
-                    "\"\nchoice text \" + customer_choice_text + \" choice num \" + customer_choice_number"
+                    "\"\nchoice text \" + customer_choice_text + \" choice num \" + CustomerBBText.customer_value"
                   ]
                 },
                 {
@@ -1635,25 +1755,9 @@
                     "=",
                     "\"\nЯ хочу [size=100]\" + customer_choice_text + \"[/size] пиццы!\""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BBText::SetBBText"
-                  },
-                  "parameters": [
-                    "NewBBText",
-                    "+",
-                    "\"[font=KGTraditionalFractions]left[/font]\""
-                  ]
                 }
               ],
               "variables": [
-                {
-                  "folded": true,
-                  "name": "customer_choice_number",
-                  "type": "number",
-                  "value": 0
-                },
                 {
                   "folded": true,
                   "name": "customer_choice_text",
@@ -1731,12 +1835,32 @@
       "actions": [
         {
           "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "customer_choice_text",
+            "=",
+            "slots_and_values_text[ArrayTools::IndexOf(slots_and_values_numbers, customer_choice_number)]"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "slots_and_values_text[deleting_pizza_index]",
+            "=",
+            "pizzas.value_pizza_text"
+          ]
+        },
+        {
+          "type": {
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "slots_and_ids[deleting_pizza_index]",
+            "slots_and_values_numbers[deleting_pizza_index]",
             "=",
-            "pizzas.id_pizza"
+            "pizzas.value_pizza_number"
           ]
         },
         {
@@ -1747,7 +1871,17 @@
             "Test_text",
             "Text",
             "+",
-            "\"\nslot index = \"+pizzas.slot_index+\" id = \"+pizzas.id_pizza"
+            "\"\narray ids is \" + slots_and_ids[0] + \" \" + slots_and_ids[1] + \" \" + slots_and_ids[2] + \" array values is \" + slots_and_values_text[0] + \" \" + slots_and_values_text[1] + \" \" + slots_and_values_text[2] + \" \" + \"array of numbers is \" + slots_and_values_numbers[0] + \" \" + slots_and_values_numbers[1] + \" \" + slots_and_values_numbers[2]"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "customer_choice_number",
+            "=",
+            "slots_and_values_numbers[Random(VariableChildCount(slots_and_values_numbers) - 1)]"
           ]
         }
       ]
