@@ -375,6 +375,69 @@
         "name": "Mulan2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Fiona.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Fiona.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "General.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "General.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pngegg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pngegg.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Leopold.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Leopold.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Merida.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Merida.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Po.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Po.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Bonifacyi.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bonifacyi.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
